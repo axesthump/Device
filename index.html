@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Device магазин</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +18,7 @@
 					<label class="visually-hidden" for="main-header-search">Поиск по сайту</label>
 					<input id="main-header-search" class="main-header-search" type="search" placeholder="Поиск по сайту">
 				</p>
-				<button class="button" type="submit">Поиск</button>
+				<button class="button" type="submit"><span>Найти</span></button>
 			</form>
 			<ul class="user-nav">
 				<li class="login-link"><a href="#">Войти</a></li>
@@ -73,8 +75,8 @@
 				  	<div class="slider-item slider-item_active">
 				  		<h2 class="visually-hidden">Селфи-палка</h2>
 				  		<img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
-				  		<span>01</span>
-				  		<b>Делай селфи, как Бен Стиллер</b>
+				  		<span class="position">01</span>
+				  		<b>Делай селфи, как Бен Стиллер!</b>
 				  		<p>Саммая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 				  		<a href="catalog.html" class="button">Подробнее</a>
 				  		<ul class="characteristics">
@@ -95,7 +97,7 @@
 				    <div class="slider-item">
 				    	<h2 class="visually-hidden">Фитнес-браслет</h2>
 				    	<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
-				    	<span>02</span>
+				    	<span class="position">02</span>
 				    	<b>Худеем правильно!</b>
 				    	<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
 				    	<a href="catalog.html" class="button">Подробнее</a>
@@ -109,7 +111,7 @@
 				    <div class="slider-item">
 				    	<h2 class="visually-hidden">Квадрокоптер</h2>
 				    	<img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-				    	<span>03</span>
+				    	<span class="position">03</span>
 				    	<b>Пархает как бабочка, жалит как пчела!</b>
 				    	<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 				    	<a href="catalog.html" class="button">Подробнее</a>
@@ -125,8 +127,6 @@
 				    	</ul>
 				    </div>
 				</div>
-				<button class="slider-control slider-control-prev" href="#" role="button"></button>
-				<button class="slider-control slider-control-next" href="#" role="button"></button>
 			</div>
 		</section>
 		<section class="popular">
@@ -143,20 +143,20 @@
 		<section class="services">
 			<h2 class="visually-hidden">Услуги</h2>
 			<ul class="services-nav">
-				<li class="deliviry"><a href="#">Доставка</a></li>
-				<li class="warranty"><a href="#">Гарантия</a></li>
-				<li class="credit"><a href="#">Кредит</a></li>
+				<li class="button deliviry"><a href="#">Доставка</a></li>
+				<li class="button warranty"><a href="#">Гарантия</a></li>
+				<li class="button credit"><a href="#">Кредит</a></li>
 			</ul>
 			<div class="services-description">
-				<div class="services-description-deliviry">
+				<div class="services-type services-description-deliviry">
 					<h3>Доставка</h3>
 					<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
 				</div>
-				<div class="services-description-warranty">
+				<div class="services-type services-description-warranty">
 					<h3>Гарантия</h3>
 					<p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 				</div>
-				<div class="services-description-credit">
+				<div class="services-type services-description-credit">
 					<h3>Кредит</h3>
 					<p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</div>
@@ -196,9 +196,9 @@
 		</p>
 		<div class="footer-nav">
 			<ul>
-				<li><a href="#"></a>Доставка</li>
-				<li><a href="#"></a>Гарантия</li>
-				<li><a href="#"></a>Контакты</li>
+				<li><a href="#">Доставка</a></li>
+				<li><a href="#">Гарантия</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 		</div>
 		<div class="footer-social">

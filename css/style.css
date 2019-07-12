@@ -1,3 +1,18 @@
+@font-face {
+    font-family: "gilroyextrabold";
+    src: url('../fonts/10871_1-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroylight';
+    src: url("../fonts/10177-webfont.woff2") format('woff2'),
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -7,4 +22,551 @@
 	padding: 0;
 	clip: rect(0 0 0 0);
 	overflow: hidden;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "gilroyextrabold" , Arial, sans-serif;
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+	font: inherit;
+	color: #000000;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 4px;
+
+}
+
+.main-header {
+	background-color: #f7e296;
+}
+
+.main-header-logo {
+	font-size: 48px;
+	line-height: 48px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+	opacity: 0.6;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
+.user-nav {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+}
+
+.main-header-search input {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+
+	background-color: transparent;
+	border: none;
+	opacity: 0.3;
+}
+
+.main-header-search input:hover {
+	opacity: 0.6;
+}
+
+.main-header-search input:focus {
+	border-bottom: 2px solid #000000;
+	opacity: 1;
+}
+
+.main-header-search button {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	text-align: center;
+	vertical-align: middle;
+
+	background-color: transparent;
+	border: 2px solid #000000;
+}
+
+.main-header-search button:hover,
+.main-header-search button:focus {
+	color: #ffffff;
+
+	background-color: #000000;
+}
+
+.main-header-search button:active span {
+	opacity: 0.3;
+}
+
+.user-nav {
+	list-style: none;
+}
+
+.user-nav a {
+	color: #000000;
+}
+
+.user-nav a:focus,
+.user-nav a:hover {
+	opacity: 0.6;
+}
+
+.user-nav a:active {
+	opacity: 0.3;
+}
+
+.site-nav {
+	list-style: none;
+}
+
+.catalog-menu-hover {
+	list-style: none;
+}
+
+.catalog-menu-item a {
+	font: inherit;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+
+}
+
+.catalog-menu-hover a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 36px;
+	text-transform: none;
+	letter-spacing: normal;
+}
+
+.catalog-menu-item a:focus,
+.catalog-menu-item a:hover {
+	opacity: 0.6;
+}
+
+.catalog-menu-item a:active {
+	opacity: 0.3;
+}
+
+.slider-item .position {
+	font-size: 179.2px;
+	line-height: 179.2px;
+	color: #ffffff;
+}
+
+.slider-item b {
+	font-size: 47px;
+	line-height: 56px;
+}
+
+.slider-item p {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #464646;
+
+}
+
+.characteristics {
+	list-style: none;
+}
+
+.characteristics .value {
+	font-family: "gilroylight" , Arial, sans-serif;
+	font-size: 36px;
+	line-height: 48px;
+	font-weight: 300;
+}
+
+.characteristics .key {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #464646;
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.popular-items {
+	list-style: none;
+}
+
+.popular-items a {
+	font: inherit;
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.popular-items a:active {
+	opacity: 0.3;
+}
+
+.services {
+	background-color: #e5e5e5;
+}
+
+.services-nav {
+	list-style: none;
+}
+
+.services-nav a {
+	color: #000000;
+}
+
+.services-type h3 {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.services-type p {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 30px;
+	color: #464646;
+}
+
+.brands ul {
+	list-style: none;
+}
+
+.about-us h2,
+.contact h2 {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.about-us p,
+.contact p {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #464646;
+}
+
+.deliviry-company {
+	list-style: none;
+}
+
+.deliviry-company  li {
+	font-size: 16px;
+	line-height: 40px;
+}
+
+.logout-link a {
+	opacity: 0.3;
+}
+
+.page-title {
+	font-size: 47px;
+	line-height: 48px;
+}
+
+.breadcrumbs {
+	list-style: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-current {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	opacity: 0.3;
+	color: #000000;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.breadcrumbs a:focus,
+.breadcrumbs a:hover {
+	opacity: 0.6;
+}
+
+.breadcrumbs a:active {
+	opacity: 0;
+}
+
+.catalog-sort h2,
+.catalog-filter h2 {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	color: #000000;
+}
+
+.catalog-filter {
+	background-color: #eeeeee;
+}
+
+.catalog-filter h2 {
+	background-color: #dcdcdc;
+}
+
+
+.catalog-sort-types,
+.catalog-sort h2,
+.catalog-sort-specific {
+	background-color: #ebebeb;
+}
+
+.catalog-filter fieldset{
+	border: none;
+}
+
+.catalog-filter legend {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.catalog-filter-color-list,
+.catalog-filter-bluetooth-list {
+	list-style: none;
+}
+
+.catalog-filter-form button {
+	border: none;
+	background-color: transparent;
+}
+
+.catalog-filter-color-item,
+.catalog-filter-bluetooth-item {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.catalog-sort-types {
+	list-style: none;
+}
+
+.catalog-sort-type a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #000000;
+	opacity: 0.3;
+}
+
+.catalog-sort-type a:hover,
+.catalog-sort-type a:focus {
+	opacity: 0.6;
+}
+
+.catalog-sort-type a:active {
+	opacity: 1;
+}
+
+.catalog-sort-types .active a {
+	opacity: 1;
+}
+
+.catalog-sort-specific {
+	list-style: none;
+}
+
+.catalog-sort-specific a {
+	color: #000000;
+}
+
+.catalog-items-list {
+	list-style: none;
+}
+
+.catalog-item h3 {
+	font-size: 18px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.item-price {
+	font-family: "gilroylight" , Arial, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 300;
+	color: #464646;
+}
+
+.add-in-basket a {
+	font: inherit;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.add-in-diff a {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 36px;
+	color: #000000;
+	opacity: 0.5;
+}
+
+.add-in-diff a:hover,
+.add-in-diff a:focus {
+	opacity: 1;
+}
+
+.add-in-diff a:active {
+	opacity: 0;
+}
+
+.pagination-list {
+	list-style: none;
+	background-color: #ebebeb;
+}
+
+.pagination-list button {
+	font: inherit;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+
+	border: none;
+	background-color: transparent;
+}
+
+.pagination-list button:hover,
+.pagination-list button:focus {
+	background-color: #d9d9d9;
+}
+
+.pagination-list button:active {
+	opacity: 0.3;
+}
+
+.pagination-item a {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.pagination-item-current a {
+	opacity: 1;
+}
+
+.logout-link {
+	opacity: 0.3;
+}
+
+.main-footer {
+	background-color: #464646;
+}
+
+.footer-logo {
+	font-size: 48px;
+	line-height: 49px;
+	color: #ffc600;
+	text-transform: uppercase;
+}
+
+.footer-logo:focus,
+.footer-logo:hover {
+	opacity: 0.6;
+}
+
+.footer-logo:active {
+	opacity: 0.3;
+}
+
+.footer-address {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.footer-nav ul {
+	list-style: none;
+}
+
+.footer-nav a {
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	color: #ffffff;
+}
+
+.footer-nav a:focus,
+.footer-nav a:hover {
+	opacity: 0.6;
+}
+
+.footer-nav a:active {
+	opacity: 0.3;
+}
+
+.footer-social ul {
+	list-style: none;
+}
+
+.footer-social a {
+	color: #ffffff;
+}
+
+.footer-user-nav ul {
+	list-style: none;
+}
+
+.footer-user-nav a{
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	line-height: 36px;
+	color: #ffffff;
+
+	opacity: 0.7;
+}
+
+.footer-user-nav a:hover,
+.footer-user-nav a:focus {
+	opacity: 1;
+}
+
+.footer-user-nav a:active {
+	opacity: 0.3;
+}
+
+.footer-phone {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.write-us-form label {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.write-us-form input,
+.write-us-form textarea {
+	font-family: "Open Sans", Arial, sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #464646;
+}
+
+.write-us-form button {
+	border: none;
+	background-color: transparent;
 }
