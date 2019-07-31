@@ -355,19 +355,41 @@ a {
 	margin-left: auto;
 }
 
+.slider-items {
+	position: relative;
+}
+
+
+
 .slider-item {
 	display: flex;
 	justify-content: space-between;
 	width: 1040px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+.slider-items .slider-item_active {
+	position: relative;
+	display: flex;
+	min-height: 470px;
+}
+
+.slider-active-pos {
+	position: absolute;
+	display: flex;
+	width: 1040px;
+	justify-content: space-between;
+	left: 0;
+	top: -97px;
 }
 
 .slider-item .position {
 	font-size: 179.2px;
 	line-height: 179.2px;
 	color: #ffffff;
-
-	/* временный цвет */
-	color: grey;
 
 	width: 180px;
 	padding-left: 325px;
