@@ -62,6 +62,7 @@ a {
 	letter-spacing: 4px;
 	text-align: center;
 	background: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+	text-transform: uppercase;
 
 	padding: 5px 25px;
 	width: 110px;
@@ -351,6 +352,18 @@ a {
 .site-nav .catalog-delivery {
 	width: 121px;
 	margin-right: 35px;
+	position: relative;
+}
+
+.site-nav .catalog-delivery::before {
+	content: "";
+
+	position: absolute;
+	width: 100px;
+	height: 7px;
+	background-color: #ffffff;
+	top: 130px;
+	left: 0;
 }
 
 .site-nav .catalog-warranty {
@@ -437,6 +450,7 @@ a {
 
 .position-for-b-pos {
 	position: relative;
+	margin-bottom: 20px;
 }
 
 .position-for-b-pos b {
@@ -452,6 +466,9 @@ a {
 
 .slider-switches-button {
 	display: flex;
+	width: 480px;
+	justify-content: space-between;
+	margin-bottom: 50px;
 }
 
 .slider-switches {
@@ -459,6 +476,49 @@ a {
 	margin: 0;
 	padding: 0;
 	display: flex;
+}
+
+.slider-switches li {
+	margin-left: 20px;
+}
+
+.slider-switches button {
+	background: none;
+	border: none;
+	position: relative;
+}
+
+.slider-switches button::before {
+	content: "";
+
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 0;
+	top: -10px;
+	background-image: url(../img/slider-button-empty.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.slider-switches .active-slide-btn::before {
+	content: "";
+
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	left: 0;
+	top: -10px;
+	background-image: url(../img/slider-button.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.button-slider {
+	padding-left: 45px;
+	padding-right: 45px;
+	text-align: center;
+	width: 130px;
 }
 
 .characteristics {
@@ -615,6 +675,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-left: 50px;
 }
 
 .warranty {
@@ -622,8 +683,29 @@ a {
 	margin-bottom: 30px;
 }
 
+.services-nav li {
+	width: 270px;
+	padding-left: 10px;
+}
+
 .services-nav a {
 	color: #000000;
+	display: inline-block;
+	padding: 5px 25px;
+	width: 110px;
+	text-align: center;
+	background: linear-gradient(to bottom, transparent 40%, #f0c52e 40%, #f0c52e 60%, transparent 60%);
+	font: inherit;
+	color: #000000;
+	font-size: 18px;
+	line-height: 24px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.services-nav a:hover,
+.services-nav a:focus {
+	background-color: #f0c52e;
 }
 
 .services-type {
@@ -676,12 +758,50 @@ a {
 	justify-content: space-around;
 }
 
+.brands img {
+	opacity: 0.2;
+	-webkit-filter: grayscale(100%);
+  	-moz-filter: grayscale(100%);
+  	-ms-filter: grayscale(100%);
+  	-o-filter: grayscale(100%);
+ 	filter: grayscale(100%);
+  	filter: gray; /* IE 6-9 */
+}
+
+.brands img:hover,
+.brands img:focus {
+	opacity: 1;
+  	-webkit-filter: none;
+  	-moz-filter: none;
+  	-ms-filter: none;
+  	-o-filter: none;
+ 	filter: none;
+  	filter: none; /* IE 6-9 */
+  	-webkit-transition: all 1s;
+  	-moz-transition: all 1s;
+  	-o-transition: all 1s;
+  	transition: all 1s;
+}
+
 .about-us h2,
 .contact h2 {
 	font-size: 47px;
 	line-height: 48px;
 
 	margin-bottom: 60px;
+	position: relative;
+}
+
+.about-us h2::before,
+.contact h2::before {
+	content: "";
+
+	position: absolute;
+	width: 80px;
+	height: 7px;
+	background-color: #000000;
+	top: -45px;
+	left: 0;
 }
 
 .about-us p,
@@ -1023,6 +1143,18 @@ a {
 	width: 205px;
 	margin: 0;
 	padding: 0;
+	position: relative;
+}
+
+.footer-address::after {
+	content: "";
+
+	position: absolute;
+	width: 80px;
+	height: 7px;
+	top: 95px;
+	left: 0;
+	background-color: #ffc600;
 }
 
 .footer-nav ul {
@@ -1057,10 +1189,61 @@ a {
 	margin: 0;
 	padding: 0;
 	width: 160px;
+	display: flex;
+	width: 140px;
+	justify-content: space-between;
 }
 
 .footer-social a {
 	color: #ffffff;
+	position: relative;
+}
+
+.footer-social a:hover::after,
+.footer-social a:focus::after {
+	opacity: 1;
+}
+
+.face a::after {
+	content: "";
+
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	background-image: url(../img/facebook.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.inst a::after {
+	content: "";
+
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	background-image: url(../img/instagram.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.twit a::after {
+	content: "";
+
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	top: 0;
+	left: 0;
+	opacity: 0.3;
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .footer-user-nav ul {
@@ -1078,8 +1261,49 @@ a {
 	font-weight: 300;
 	line-height: 36px;
 	color: #ffffff;
+	position: relative;
+	padding-left: 30px;
 
 	opacity: 0.7;
+}
+
+.footer-login-link a::after {
+	content: "";
+
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	top: 4px;
+	left: 5px;
+	background-image: url(../img/footer-user.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer-compare-link a::after {
+	content: "";
+
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	top: 6px;
+	left: 10px;
+	background-image: url(../img/footer-compare.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.footer-basket-link a::after {
+	content: "";
+
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	top: 4px;
+	left: 7px;
+	background-image: url(../img/footer-cart.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
 }
 
 .footer-user-nav a:hover,
@@ -1125,6 +1349,7 @@ a {
 	display: flex;
 	width: 1160px;
 	justify-content: center;
+	margin-bottom: 30px;
 }
 
 .write-us-form label {
