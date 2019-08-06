@@ -437,15 +437,15 @@ a {
 
 }
 
-.slider-item img {
-	width: 384px;
-}
-
 .slider-right-content {
 	display: flex;
 	flex-direction: column;
 	width: 500px;
 	padding-top: 70px;
+}
+
+.quadrocopter-img {
+	margin-top: 50px;
 }
 
 .position-for-b-pos {
@@ -714,7 +714,9 @@ a {
 
 }
 
-.services-description-deliviry {
+.services-description-deliviry,
+.services-description-warranty,
+.services-description-credit {
 	position: relative;
 }
 
@@ -727,6 +729,30 @@ a {
 	bottom: 15px;
 	right: -275px;
 	background-image: url(../img/delivery.svg);
+	background-repeat: no-repeat;
+}
+
+.services-description-warranty::after {
+	content: "";
+
+	position: absolute;
+	width: 171px;
+	height: 194px;
+	bottom: 15px;
+	right: -275px;
+	background-image: url(../img/warranty.svg);
+	background-repeat: no-repeat;
+}
+
+.services-description-credit::after {
+	content: "";
+
+	position: absolute;
+	width: 156px;
+	height: 186px;
+	bottom: 15px;
+	right: -275px;
+	background-image: url(../img/credit.svg);
 	background-repeat: no-repeat;
 }
 
