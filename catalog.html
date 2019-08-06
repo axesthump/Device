@@ -107,7 +107,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<button class="button" type="submit">Показать</button>
+						<button class="button button-show" type="submit">Показать</button>
 					</form>
 				</section>
 				<section class="catalog-sort">
@@ -120,70 +120,78 @@
 						</ul>
 						<ul class="catalog-sort-specific">
 							<li class="sort-up">
-								<a href="#">Вверх</a>
+								<a href="#"><span class="visually-hidden">Вверх</span></a>
 							</li>
 							<li class="sort-down">
-								<a href="#">Вниз</a>
+								<a href="#"><span class="visually-hidden">Вниз</span></a>
 							</li>
 						</ul>
 					</div>
 					<ul class="catalog-items-list">
 						<li class="catalog-item">
-							<a href="catalog-item.html">
-								<h3>
-									Любительская селфи палка
-								</h3>
-								<p>
-									<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
-								</p>
-							</a>
-							<span class="item-price">500 руб.</span>
-							<div class="hover-element">
+							<div class="item-price-pos">
+								<a href="catalog-item.html">
+									<h3>
+										Любительская селфи палка
+									</h3>
+									<p>
+										<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
+									</p>
+								</a>
+								<span class="item-price">500 руб.</span>
+							</div>
+							<div class="hover-element visually-hidden">
 								<span class="add-in-basket"><a href="#">В корзину</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
 						</li>
 						<li class="catalog-item">
-							<a href="catalog-item.html">
-								<h3>
-									Проффесиональная селфи-палка
-								</h3>
-								<p>
-									<img src="img/item-2.jpg" width="360" height="380" alt="Проффесиональная селфи-палка">
-								</p>
-							</a>
-							<span class="item-price">1 500 руб.</span>
-							<div class="hover-element">
+							<div class="item-price-pos">
+								<a href="catalog-item.html">
+									<h3>
+										Проффесиональная селфи-палка
+									</h3>
+									<p>
+										<img src="img/item-2.jpg" width="360" height="380" alt="Проффесиональная селфи-палка">
+									</p>
+								</a>
+								<span class="item-price">1 500 руб.</span>
+							</div>
+							<div class="hover-element visually-hidden">
 								<span class="add-in-basket"><a href="#">Добавить в карзицу</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
 						</li>
 						<li class="catalog-item">
-							<a href="catalog-item.html">
-								<h3>
-									Непотопляемая селфи-палка
-								</h3>
-								<p>
-									<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-								</p>
-							</a>
-							<span class="item-price">2 500 руб.</span>
-							<div class="hover-element">
+							<div class="item-price-pos">
+								<a href="catalog-item.html">
+									<h3>
+										Непотопляемая селфи-палка
+									</h3>
+									<p>
+										<img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+									</p>
+								</a>
+								<span class="item-price">2 500 руб.</span>
+							</div>
+							<div class="hover-element visually-hidden">
 								<span class="add-in-basket"><a href="#">Добавить в карзицу</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
 						</li>
 						<li class="catalog-item">
-							<a href="catalog-item.html">
-								<h3>
-									Селфи-палка "Следуй за мной"
-								</h3>
-								<p>
-									<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
-								</p>
-							</a>
-							<span class="item-price">4 900 руб.</span>
-							<div class="hover-element">
+							<div class="item-price-pos">
+								<a href="catalog-item.html">
+									<h3>
+										Селфи-палка "Следуй за мной"
+									</h3>
+									<p class="new-item">
+										<img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка Следуй за мной">
+									</p>
+								</a>
+								<span class="item-price">4 900 руб.</span>
+							</div>
+							<div class="hover-element visually-hidden">
 								<span class="add-in-basket"><a href="#">Добавить в карзицу</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
@@ -191,9 +199,11 @@
 					</ul>
 					<ul class="pagination-list">
 						<li><button class="-pagination-button" type="button">Назад</button></li>
-						<li class="pagination-item pagination-item-current"><a>1</a></li>
-						<li class="pagination-item"><a href="#">2</a></li>
-						<li class="pagination-item"><a href="#">3</a></li>
+						<div class="pagination-num">
+							<li class="pagination-item pagination-item-current"><a>1</a></li>
+							<li class="pagination-item"><a href="#">2</a></li>
+							<li class="pagination-item"><a href="#">3</a></li>
+						</div>
 						<li><button class="-pagination-button" type="button">Вперед</button></li>
 					</ul>
 				</section>
@@ -206,9 +216,9 @@
 				<a class="footer-logo">Device</a>
 				<div class="footer-user-nav">
 					<ul>
-						<li><a href="#">Войти</a></li>
-						<li><a href="#">Сравнить</a></li>
-						<li><a href="#">Корзина</a></li>
+						<li class="footer-login-link"><a href="#">Войти</a></li>
+						<li class="footer-compare-link"><a href="#">Сравнить</a></li>
+						<li class="footer-basket-link"><a href="#">Корзина</a></li>
 					</ul>
 				</div>
 			</div>
@@ -224,15 +234,15 @@
 					</ul>
 				</div>
 				<span class="footer-phone">
-					Тел: +7 (495)495-95-95
+					Тел: +7 (495) 495-95-95
 				</span>
 			</div>
 			<div class="row-3">
 				<div class="footer-social">
 					<ul>
-						<li><a href="#">Фейсбук</a></li>
-						<li><a href="#">Инстаграм</a></li>
-						<li><a href="#">Твиттер</a></li>
+						<li class="face"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+						<li class="inst"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+						<li class="twit"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
 					</ul>
 				</div>
 			</div>
