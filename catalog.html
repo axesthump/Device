@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="main-header container">
+	<header class="main-header container inner-page-header">
 		<nav class="main-nav">
-			<a class="main-header-logo" href="index.html">
+			<a class="main-header-logo">
 				Device
 			</a>
 			<div class="search-user-nav">
@@ -19,7 +19,7 @@
 						<label class="visually-hidden" for="main-header-search">Поиск по сайту</label>
 						<input id="main-header-search" class="main-header-search-input" type="search" placeholder="Поиск по сайту">
 					</p>
-					<button class="button" type="submit"><span>Найти</span></button>
+					<button class="visually-hidden" type="submit"><span>Найти</span></button>
 				</form>
 				<ul class="user-nav">
 					<li class="login-link"><a href="#">Войти</a></li>
@@ -29,8 +29,8 @@
 			</div>
 			<ul class="site-nav">
 				<li class="catalog-menu-item catalog-items">
-					<a>Каталог товаров</a>
-					<ul class="catalog-menu-hover">
+					<a class="catalog">Каталог товаров</a>
+					<ul class="catalog-menu-hover visually-hidden">
 						<li class="catalog-menu-hover-item column-1"><a href="#">Виртуальная реальность</a></li>
 						<li class="catalog-menu-hover-item column-1"><a href="#">Моноподы для селфи</a></li>
 						<li class="catalog-menu-hover-item column-1"><a href="#">Экшн-камеры</a></li>
@@ -55,9 +55,9 @@
 		<div class="container">
 			<h1 class="page-title">Моноподы для селфи</h1>
 			<ul class="breadcrumbs">
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="#">Каталог товаров</a></li>
-				<li class="breadcrumbs-current">Моноподы для селфи</li>
+				<li class="crumb"><a href="index.html">Главная</a></li>
+				<li class="crumb"><a href="#">Каталог товаров</a></li>
+				<li class="breadcrumbs-current"><a>Моноподы для селфи</a></li>
 			</ul>
 		</div>
 		<div class="filter-sort-bg">
