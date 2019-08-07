@@ -67,6 +67,7 @@ a {
 	padding: 5px 25px;
 	width: 110px;
 
+	cursor: pointer;
 }
 
 .button:hover,
@@ -103,6 +104,7 @@ a {
 	color: #000000;
 
 	width: 165px;
+	cursor: pointer;
 }
 
 .main-header-logo:hover,
@@ -1043,6 +1045,52 @@ a {
 	list-style: none;
 }
 
+.catalog-filter-color-item {
+	position: relative;
+}
+
+.catalog-filter-color-item label {
+	cursor: pointer;
+}
+
+.catalog-filter-color-list input[type="checkbox"] + .checkbox-icon {
+	position: absolute;
+	top: 8px;
+	left: -40px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url(../img/checkbox-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	cursor: pointer;
+}
+
+.catalog-filter-color-list input[type="checkbox"] + .checkbox-icon:hover {
+	opacity: 0.8;
+}
+
+.catalog-filter-color-list input[type="checkbox"]:checked + .checkbox-icon {
+	position: absolute;
+	top: 8px;
+	left: -40px;
+
+	width: 27px;
+	height: 23px;
+
+	background-image: url(../img/checkbox-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	cursor: pointer;
+}
+
+.catalog-filter-color-item label:hover {
+	opacity: 0.8;
+}
+
 .catalog-filter-form button {
 	border: none;
 	background-color: transparent;
@@ -1061,6 +1109,48 @@ a {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 40px;
+}
+
+.catalog-filter-bluetooth-item {
+	position: relative;
+}
+
+.catalog-filter-bluetooth-item label {
+	cursor: pointer;
+}
+
+.catalog-filter-bluetooth-item label:hover {
+	opacity: 0.8;
+}
+
+.catalog-filter-bluetooth-item input[type="radio"] + .radio-icon {
+	position: absolute;
+	top: 7px;
+	left: -40px;
+
+	width: 25px;
+	height: 25px;
+
+	background-image: url(../img/radio-off.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	cursor: pointer;
+}
+
+.catalog-filter-bluetooth-item input[type="radio"]:checked + .radio-icon {
+	position: absolute;
+	top: 7px;
+	left: -40px;
+
+	width: 25px;
+	height: 25px;
+
+	background-image: url(../img/radio-on.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+	cursor: pointer;
 }
 
 .catalog-sort-types {
@@ -1508,6 +1598,10 @@ a {
 	padding: 65px 0;
 	display: flex;
 	flex-direction: column;
+}
+
+.footer-inner-page {
+	cursor: pointer;
 }
 
 .row-1 {

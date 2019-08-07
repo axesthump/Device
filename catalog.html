@@ -10,7 +10,7 @@
 <body>
 	<header class="main-header container inner-page-header">
 		<nav class="main-nav">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="index.html">
 				Device
 			</a>
 			<div class="search-user-nav">
@@ -73,24 +73,39 @@
 							<legend>Цвет</legend>
 							<ul class="catalog-filter-color-list">
 								<li class="catalog-filter-color-item">
-									<input id="catalog-filter-color-item-black" class="visually-hidden" type="checkbox" name="black" checked>
-									<label for="catalog-filter-color-item-black">Черный</label>
+									<label>
+										<input class="visually-hidden" type="checkbox" name="black" checked>
+										<span class="checkbox-icon"></span>
+										<span>Черный</span>
+									</label>
 								</li>
 								<li class="catalog-filter-color-item">
-									<input id="catalog-filter-color-item-white" class="visually-hidden" type="checkbox" name="white">
-									<label for="catalog-filter-color-item-white">Белый</label>
+									<label>
+										<input class="visually-hidden" type="checkbox" name="white">
+										<span class="checkbox-icon"></span>
+										<span>Белый</span>
+									</label>
 								</li>
 								<li class="catalog-filter-color-item">
-									<input id="catalog-filter-color-item-blue" class="visually-hidden" type="checkbox" name="blue" checked>
-									<label for="catalog-filter-color-item-blue">Синий</label>
+									<label>
+										<input class="visually-hidden" type="checkbox" name="blue" checked>
+										<span class="checkbox-icon"></span>
+										<span>Синий</span>
+									</label>
 								</li>
 								<li class="catalog-filter-color-item">
-									<input id="catalog-filter-color-item-red" class="visually-hidden" type="checkbox" name="red" checked>
-									<label for="catalog-filter-color-item-red">Красный</label>
+									<label>
+										<input class="visually-hidden" type="checkbox" name="red" checked>
+										<span class="checkbox-icon"></span>
+										<span>Красный</span>
+									</label>
 								</li>
 								<li class="catalog-filter-color-item">
-									<input id="catalog-filter-color-item-pink" class="visually-hidden" type="checkbox" name="pink">
-									<label for="catalog-filter-color-item-pink">Розовый</label>
+									<label>
+										<input id="catalog-filter-color-item-pink" class="visually-hidden" type="checkbox" name="pink">
+										<span class="checkbox-icon"></span>
+										<span>Розовый</span>
+									</label>
 								</li>
 							</ul>
 						</fieldset>
@@ -98,12 +113,18 @@
 							<legend>Bluetooth</legend>
 							<ul class="catalog-filter-bluetooth-list">
 								<li class="catalog-filter-bluetooth-item">
-									<input id="filter-bluetooth-yes" class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes">
-									<label for="filter-bluetooth-yes">Есть</label>
+									<label>
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" checked>
+										<span class="radio-icon"></span>
+										Есть
+									</label>
 								</li>
 								<li class="catalog-filter-bluetooth-item">
-									<input id="filter-bluetooth-no" class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no">
-									<label for="filter-bluetooth-no">Нет</label>
+									<label>
+										<input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no">
+										<span class="radio-icon"></span>
+										Нет
+									</label>
 								</li>
 							</ul>
 						</fieldset>
@@ -213,7 +234,7 @@
 	<footer class="main-footer">
 		<div class="footer-cont">
 			<div class="row-1">
-				<a class="footer-logo">Device</a>
+				<a class="footer-logo footer-inner-page" href="index.html">Device</a>
 				<div class="footer-user-nav">
 					<ul>
 						<li class="footer-login-link"><a href="#">Войти</a></li>
