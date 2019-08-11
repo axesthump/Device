@@ -333,6 +333,7 @@ a {
 	width: 1040px;
 	margin: 0 auto;
 	margin-bottom: 190px;
+	position: relative;
 }
 
 .site-nav .catalog-items {
@@ -482,6 +483,10 @@ a {
 	margin: 0;
 	padding: 0;
 	display: flex;
+	position: absolute;
+	z-index: 4;
+	right: 50px;
+	top: 217px;
 }
 
 .slider-switches li {
@@ -492,6 +497,8 @@ a {
 	background: none;
 	border: none;
 	position: relative;
+	cursor: pointer;
+	min-height: 12px;
 }
 
 .slider-switches button::before {
@@ -501,10 +508,11 @@ a {
 	width: 12px;
 	height: 12px;
 	left: 0;
-	top: -10px;
+	top: 0;
 	background-image: url(../img/slider-button-empty.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	cursor: pointer;
 }
 
 .slider-switches .active-slide-btn::before {
@@ -514,10 +522,11 @@ a {
 	width: 12px;
 	height: 12px;
 	left: 0;
-	top: -10px;
+	top: 0;
 	background-image: url(../img/slider-button.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
+	cursor: pointer;
 }
 
 .button-slider {
@@ -720,10 +729,30 @@ a {
 
 }
 
+.active-service {
+	background-color: #000000;
+}
+
+.active-service a {
+	background: none;
+	background-color: #000000;
+	color: #f7e184;
+}
+
+.active-service a:hover,
+.active-service a:focus {
+	background-color: #000000;
+}
+
 .services-description-deliviry,
 .services-description-warranty,
 .services-description-credit {
 	position: relative;
+	display: none;
+}
+
+.active-services {
+	display: block;
 }
 
 .services-description-deliviry::after {
@@ -1764,4 +1793,8 @@ a {
 	left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.active-popup {
+	display: block;
 }

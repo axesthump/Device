@@ -55,10 +55,27 @@
 		<div class="container">
 			<h1 class="visually-hidden">Магазин Device</h1>
 			<section class="main-slider-items">
-				<h2 class="visually-hidden">Слайдер</h2>
+				<h2 class="visually-hidden">Популярные товары в слайдере</h2>
 				<div id="slider" class="slider">
 					<div class="slider-items">
-					  	<div class="slider-item slider-item_active">
+						<ul class="slider-switches">
+					  		<li class="slide-radio">
+					  			<button class="slide-btn active-slide-btn first-slide-btn">
+					  				<span class="visually-hidden">Первый слайд</span>
+					  			</button>
+					  		</li>
+					  		<li class="slide-radio">
+					  			<button class="slide-btn second-slide-btn">
+					  				<span class="visually-hidden">Второй слайд</span>
+					  			</button>
+					  		</li>
+					  		<li class="slide-radio">
+					  			<button class="slide-btn third-slide-btn">
+					  				<span class="visually-hidden">Третий слайд</span>
+					  			</button>
+					  		</li>
+					  	</ul>
+					  	<div class="slider-item slider-item_active first-slide">
 					  		<div class="slider-active-pos">
 					  			<h2 class="visually-hidden">Селфи-палка</h2>
 					  			<img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка">
@@ -70,23 +87,6 @@
 					  				<p>Саммая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					  				<div class="slider-switches-button">
 					  					<a href="catalog.html" class="button button-slider">Подробнее</a>
-					  					<ul class="slider-switches">
-					  						<li class="slide-radio">
-					  							<button class="slide-btn active-slide-btn">
-					  								<span class="visually-hidden">Первый слайд</span>
-					  							</button>
-					  						</li>
-					  						<li class="slide-radio">
-					  							<button class="slide-btn">
-					  								<span class="visually-hidden">Второй слайд</span>
-					  							</button>
-					  						</li>
-					  						<li class="slide-radio">
-					  							<button class="slide-btn">
-					  								<span class="visually-hidden">Третий слайд</span>
-					  							</button>
-					  						</li>
-					  					</ul>
 					  				</div>
 					  				<ul class="characteristics">
 					  					<li>
@@ -105,7 +105,7 @@
 					  			</div>
 					  		</div>
 					    </div>
-					    <div class="slider-item">
+					    <div class="slider-item second-slide">
 					    	<div class="slider-active-pos">
 					    		<h2 class="visually-hidden">Фитнес-браслет</h2>
 					    		<img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
@@ -117,23 +117,6 @@
 					    			<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету</p>
 					    			<div class="slider-switches-button">
 					    				<a href="catalog.html" class="button button-slider">Подробнее</a>
-					    				<ul class="slider-switches">
-					    					<li class="slide-radio">
-					    						<button class="slide-btn">
-					    							<span class="visually-hidden">Первый слайд</span>
-					    						</button>
-					    					</li>
-					    					<li class="slide-radio">
-					    						<button class="slide-btn">
-					    							<span class="visually-hidden">Второй слайд</span>
-					    						</button>
-					    					</li>
-					    					<li class="slide-radio">
-					    						<button class="slide-btn">
-					    							<span class="visually-hidden">Третий слайд</span>
-					    						</button>
-					    					</li>
-					    				</ul>
 					    			</div>
 					    			<ul class="characteristics">
 					    				<li>
@@ -144,7 +127,7 @@
 					    		</div>
 					    	</div>
 					    </div>
-					    <div class="slider-item">
+					    <div class="slider-item third-slide">
 					    	<div class="slider-active-pos">
 					    		<h2 class="visually-hidden">Квадрокоптер</h2>
 					    		<img class="quadrocopter-img" src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
@@ -156,23 +139,6 @@
 					    			<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					    			<div class="slider-switches-button">
 					    				<a href="catalog.html" class="button button-slider">Подробнее</a>
-					    				<ul class="slider-switches">
-					    					<li class="slide-radio">
-					    						<button class="slide-btn">
-					    							<span class="visually-hidden">Первый слайд</span>
-					    						</button>
-					    					</li>
-					    					<li class="slide-radio">
-					    						<button class="slide-btn">
-					    							<span class="visually-hidden">Второй слайд</span>
-					    						</button>
-					    					</li>
-					    					<li class="slide-radio">
-					    						<button class="slide-btn">
-					    							<span class="visually-hidden">Третий слайд</span>
-					    						</button>
-					    					</li>
-					    				</ul>
 					    			</div>
 					    			<ul class="characteristics">
 					    				<li>
@@ -218,16 +184,16 @@
 			<div class="container services-decor">
 				<h2 class="visually-hidden">Услуги</h2>
 				<ul class="services-nav">
-					<li class="deliviry"><a href="#">Доставка</a></li>
+					<li class="active-service deliviry"><a href="#">Доставка</a></li>
 					<li class="warranty"><a href="#">Гарантия</a></li>
 					<li class="credit"><a href="#">Кредит</a></li>
 				</ul>
 				<div class="services-description">
-					<div class="services-type services-description-deliviry visually-hidden">
+					<div class="services-type services-description-deliviry active-services">
 						<h3>Доставка</h3>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем поднимая его на ваш этаж.</p>
 					</div>
-					<div class="services-type services-description-warranty visually-hidden">
+					<div class="services-type services-description-warranty">
 						<h3>Гарантия</h3>
 						<p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
 					</div>
@@ -263,8 +229,8 @@
 				<section class="contact">
 					<h2>Контакты</h2>
 					<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-					<button><img src="img/map.png" width="560" height="222" alt="Карта"></button>
-					<a href="#" class="button">Напишите нам</a>
+					<button class="map-link"><img src="img/map.png" width="560" height="222" alt="Карта"></button>
+					<a href="#" class="button write-us-link">Напишите нам</a>
 				</section>
 			</div>
 		</div>
@@ -330,7 +296,10 @@
 	</section>
 	<section class="modal modal-map">
 		<img src="img/map-big.jpg" width="960" height="559" alt="Адрес как до нас добраться">
-		<button class="modal modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+		<button class="modal modal-close modal-close-m" type="button"><span class="visually-hidden">Закрыть</span></button>
 	</section>
+	<script src="js/slider.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/popup.js"></script>
 </body>
 </html>
