@@ -5,6 +5,7 @@
 	<title>Каталог</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
 						<label class="visually-hidden" for="main-header-search">Поиск по сайту</label>
 						<input id="main-header-search" class="main-header-search-input" type="search" placeholder="Поиск по сайту">
 					</p>
-					<button class="search-btn" type="submit"><span>Найти</span></button>
+					<button class="search-btn visually-hidden" type="submit"><span>Найти</span></button>
 				</form>
 				<ul class="user-nav">
 					<li class="login-link"><a href="#">Войти</a></li>
@@ -69,7 +70,13 @@
 					<form action="" class="catalog-filter-form" method="get">
 						<fieldset>
 							<legend>Стоимость</legend>
-							<input class="catalog-filter-price" type="range" name="price" min="0" max="10000">
+							<div id="slider-range"></div>
+							<p class="amount-style">
+								<label for="amount">от</label>
+								<input type="text" id="amount">
+								<label for="amount_max">до</label>
+								<input type="text" id="amount_max">
+							</p>
 						</fieldset>
 						<fieldset>
 							<legend>Цвет</legend>
@@ -152,24 +159,26 @@
 					</div>
 					<ul class="catalog-items-list">
 						<li class="catalog-item">
-							<div class="item-price-pos">
-								<a href="catalog-item.html">
-									<h3>
-										Любительская селфи палка
-									</h3>
-									<p>
-										<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
-									</p>
-								</a>
-								<span class="item-price">500 руб.</span>
-							</div>
-							<div class="hover-element visually-hidden">
-								<span class="add-in-basket"><a href="#">В корзину</a></span>
-								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
+							<div class="catalog-item-one">
+								<div class="item-price-pos catalog-item-1">
+									<a href="catalog-item.html">
+										<h3>
+											Любительская селфи палка
+										</h3>
+										<p>
+											<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи палка">
+										</p>
+									</a>
+									<span class="item-price">500 руб.</span>
+								</div>
+								<div class="hover-element visually-hidden">
+									<span class="add-in-basket"><a href="#" class="button">В корзину</a></span>
+									<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
+								</div>
 							</div>
 						</li>
-						<li class="catalog-item">
-							<div class="item-price-pos">
+						<li class="catalog-item catalog-item-two">
+							<div class="item-price-pos catalog-item-2">
 								<a href="catalog-item.html">
 									<h3>
 										Проффесиональная селфи-палка
@@ -181,12 +190,12 @@
 								<span class="item-price">1 500 руб.</span>
 							</div>
 							<div class="hover-element visually-hidden">
-								<span class="add-in-basket"><a href="#">Добавить в карзицу</a></span>
+								<span class="add-in-basket"><a href="#" class="button">В корзину</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
 						</li>
-						<li class="catalog-item">
-							<div class="item-price-pos">
+						<li class="catalog-item catalog-item-three">
+							<div class="item-price-pos catalog-item-3">
 								<a href="catalog-item.html">
 									<h3>
 										Непотопляемая селфи-палка
@@ -198,12 +207,12 @@
 								<span class="item-price">2 500 руб.</span>
 							</div>
 							<div class="hover-element visually-hidden">
-								<span class="add-in-basket"><a href="#">Добавить в карзицу</a></span>
+								<span class="add-in-basket"><a href="#" class="button">В корзину</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
 						</li>
-						<li class="catalog-item">
-							<div class="item-price-pos">
+						<li class="catalog-item catalog-item-four">
+							<div class="item-price-pos catalog-item-4">
 								<a href="catalog-item.html">
 									<h3>
 										Селфи-палка "Следуй за мной"
@@ -215,7 +224,7 @@
 								<span class="item-price">4 900 руб.</span>
 							</div>
 							<div class="hover-element visually-hidden">
-								<span class="add-in-basket"><a href="#">Добавить в карзицу</a></span>
+								<span class="add-in-basket"><a href="#" class="button">В корзину</a></span>
 								<span class="add-in-diff"><a href="#">Добавить в сравнение</a></span>
 							</div>
 						</li>
@@ -271,6 +280,11 @@
 			</div>
 		</div>
 	</footer>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+ 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="js/drop_down_menu.js"></script>
+	<script src="js/amount.js"></script>
+	<script src="js/search_btn.js"></script>
+	<script src="js/item_hover.js"></script>
 </body>
 </html>

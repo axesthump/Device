@@ -68,6 +68,7 @@ a {
 	width: 110px;
 
 	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .button:hover,
@@ -409,8 +410,6 @@ a {
 	position: relative;
 }
 
-
-
 .slider-item {
 	display: flex;
 	justify-content: space-between;
@@ -739,6 +738,7 @@ a {
 	line-height: 24px;
 	letter-spacing: 4px;
 	text-transform: uppercase;
+	transition: all 0.3s ease;
 }
 
 .services-nav a:hover,
@@ -1075,6 +1075,26 @@ a {
 	border: none;
 }
 
+.amount-style input,
+.amount-style label {
+	border: 0;
+	color: #c5c5c5;
+}
+
+.amount-style label {
+	margin: 0;
+	padding: 0;
+}
+
+.amount-style input {
+	width: 70px;
+}
+
+#slider-range {
+	width: 200px;
+	margin-top: 30px;
+}
+
 .catalog-filter legend {
 	font-size: 18px;
 	line-height: 24px;
@@ -1271,6 +1291,22 @@ a {
 .catalog-item {
 	width: 360px;
 	margin-bottom: 60px;
+	position: relative;
+}
+
+.catalog-item .hover-element {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.catalog-item .hover-element a {
+	width: 200px;
+	text-align: center;
 }
 
 .catalog-item a {
@@ -1445,6 +1481,7 @@ a {
 	text-transform: uppercase;
 
 	width: 165px;
+	cursor: pointer;
 }
 
 .footer-logo:focus,
@@ -1826,3 +1863,43 @@ a {
 #active {
 	display: block;
 }
+
+.ui-slider.ui-slider-horizontal {
+	background: #dbdbdb;
+	height: 2px;
+	border: none;
+}
+
+
+.ui-slider .ui-slider-range {
+	background: #91c92f;
+	height: 2px;
+}
+
+.ui-slider .ui-slider-handle{
+	background: #ffffff;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	top: -10px;
+	height: 20px;
+	width: 20px;
+}
+
+.ui-slider .ui-slider-handle::before {
+	content: "";
+
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	left: 50%;
+	top: 50%;
+	margin-left: -2px;
+	margin-top: -2px;
+	background-color: #ababab;
+	border-radius: 50%;
+}
+
+.catalog-item-hover-js {
+	display: flex;
+}
+
