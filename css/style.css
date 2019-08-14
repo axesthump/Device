@@ -623,6 +623,7 @@ a {
 	background-color: #f7e296;
 	top: -185px;
 	left: 0;
+	transition: all 0.3s ease;
 }
 
 .popular-items .virtual-reality a::after {
